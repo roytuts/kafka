@@ -1,0 +1,29 @@
+buildscript {
+	ext {
+		springBootVersion = '2.2.2.RELEASE'
+	}
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java-library'
+    id 'org.springframework.boot' version '2.2.2.RELEASE'
+}
+
+sourceCompatibility = 12
+targetCompatibility = 12
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-websocket:${springBootVersion}")
+    implementation 'org.springframework.kafka:spring-kafka:2.3.4.RELEASE'
+    implementation 'org.apache.kafka:kafka-streams:2.4.0'
+}
