@@ -1,1 +1,1 @@
-You can go through the tutorial https://www.roytuts.com/python-client-for-apache-kafka-producer-and-consumer/
+Please follow the tutorial https://roytuts.com/python-client-for-apache-kafka-producer-and-consumer/
